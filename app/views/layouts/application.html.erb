@@ -7,9 +7,20 @@
 
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
-  </head>
+  <style>
+    nav ul li {
+      display: inline-block;
+      font-size: 30px;
+      padding-right: 15px;
+    }
 
+    nav ul li a {
+      text-decoration: none;
+    }
+  </style>
+  </head>
   <body>
+    <%= render 'layouts/navbar' %>
     <%= yield %>
   </body>
 </html>
